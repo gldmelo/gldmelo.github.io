@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://www.gldmelo.com.br/sitemap-index.xml
