@@ -110,12 +110,8 @@ export const headerData = {
         },
       ],
     },
-    {
-      text: 'Widgets',
-      href: '#',
-    },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  actions: [{ text: 'Meu GitHub', href: 'https://github.com/gldmelo', target: '_blank' }],
 };
 
 export const footerData = {
