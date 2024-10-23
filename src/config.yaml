@@ -1,22 +1,22 @@
 site:
-  name: Guilherme Melo - Full Stack Developer
+  name: Guilherme Melo
   site: 'https://www.gldmelo.com.br'
   base: '/'
   trailingSlash: false
 
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  googleSiteVerificationId: ''
 
 # Default SEO metadata
 metadata:
   title:
     default: AstroWind
     template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "Full Stack Developer. Programação e consultoria em projetos de software."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: gldmelo.com.br
     images:
       - url: '~/assets/images/default.png'
         width: 1200
@@ -66,7 +66,7 @@ apps:
 analytics:
   vendors:
     googleAnalytics:
-      id: null # or "G-XXXXXXXXXX"
+      id: 'G-5NEM1TNRCF'
 
 ui:
   theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"

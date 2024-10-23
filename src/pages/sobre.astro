@@ -6,32 +6,26 @@ import Hero from '~/components/widgets/Hero.astro';
 import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Features3 from '~/components/widgets/Features3.astro';
-import Testimonials from '~/components/widgets/Testimonials.astro';
+//import Testimonials from '~/components/widgets/Testimonials.astro';
 import Steps from '~/components/widgets/Steps.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+//import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+
 
 const metadata = {
-  title: 'Personal Homepage Demo',
+  title: 'Guilherme Melo - Full Stack Developer',
+  ignoreTitleTemplate: true,
 };
 ---
 
 <Layout metadata={metadata}>
-  <Fragment slot="announcement"></Fragment>
+  <!-- <Fragment slot="announcement"></Fragment> -->
   <Fragment slot="header">
     <Header
       links={[
         { text: 'Home', href: '#' },
-        { text: 'About', href: '#about' },
-        { text: 'Resume', href: '#resume' },
-        { text: 'Porfolio', href: '#porfolio' },
-        { text: 'Blog', href: '#blog' },
-        { text: 'Github', href: 'https://github.com/onwidget' },
-      ]}
-      actions={[
-        {
-          text: 'Hire me',
-          href: '#',
-        },
+        { text: 'Sobre mim', href: '#mim' },
+        { text: 'Experiência', href: '#experiencia' },
+        { text: 'Formação', href: '#formacao' }
       ]}
       isSticky
       showToggleTheme
@@ -39,70 +33,39 @@ const metadata = {
   </Fragment>
 
   <!-- Hero2 Widget ******************* -->
-
-  <Hero
+  <!-- <Hero
     id="hero"
-    title="Sarah Johnson"
-    tagline="Personal Web Demo"
-    actions={[{ variant: "primary", target: '_blank', text: 'Hire me', href: '/' }]}
+    title="Guilherme Melo"
+    tagline=""
+    
   >
     <Fragment slot="subtitle">
-      I'm a Graphic Designer passionate about crafting visual stories. <br /> With 5 years of experience and a degree
-      from New York University's School of Design. I infuse vitality into brands and designs, transforming concepts into
-      captivating realities.
+      Sou Cientista da Computação de formação, com duas especializações na área. Atuo
+      como desenvolvedor profissional desde 2007 utilizando primariamente tecnologias Microsoft C# .NET.
+      Dentre minhas habilidades estão a paixão na criação de sistemas web e análise de dados
+      para resolver problemas de negócio nas empresas por onde passei.
     </Fragment>
-  </Hero>
+  </Hero> -->
 
   <!-- Content Widget **************** -->
-
   <Content
-    id="about"
+    id="mim"
     columns={3}
-    items={[
-      {
-        icon: 'tabler:brand-dribbble',
-        callToAction: {
-          target: '_blank',
-          text: 'Dribbble',
-          href: '#',
-        },
-      },
-      {
-        icon: 'tabler:brand-behance',
-        callToAction: {
-          target: '_blank',
-          text: 'Behance',
-          href: '#',
-        },
-      },
-      {
-        icon: 'tabler:brand-pinterest',
-        callToAction: {
-          target: '_blank',
-          text: 'Pinterest',
-          href: '#',
-        },
-      },
-    ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Colorful Image',
+      src: '/foto.jpg',
+      alt: '',
       loading: 'eager',
     }}
   >
     <Fragment slot="content">
-      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h2>
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Sobre mim</h2>
       <p>
-        Welcome to my creative journey. My work is a testament to my commitment to bringing ideas to life, where each
-        pixel becomes a brushstroke in the canvas of imagination.
+        Sou Cientista da Computação de formação, com duas especializações na área. Atuo como desenvolvedor profissional desde 2007 utilizando primariamente tecnologias Microsoft C# .NET.
       </p>
       <br />
       <p>
-        I find inspiration in the world around me, whether through the pages of a captivating novel, the intricate
-        details of typography, or the vibrant hues of nature during my outdoor escapades.
+        Dentre minhas habilidades estão a paixão na criação de sistemas web e análise de dados para resolver problemas de negócio nas empresas por onde passei.
       </p>
-      <br />
-      <p>If you're curious to dive deeper into my work, you can follow me:</p>
     </Fragment>
 
     <Fragment slot="bg">
@@ -113,19 +76,37 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    id="resume"
-    title="Work experience"
+    id="experiencia"
+    title="Experiência Profissional"
     items={[
       {
-        title:
-          'Graphic Designer <br /> <span class="font-normal">ABC Design Studio, New York, NY</span> <br /> <span class="text-sm font-normal">2021 - Present</span>',
-        description: `Collaborate with clients to understand design requirements and objectives. <br /> Develop branding solutions, including logos, color palettes, and brand guidelines. <br /> Design marketing materials such as brochures, posters, and digital assets. <br /> Create visually appealing user interfaces for websites and applications.`,
+        title: 'Desenvolvedor Full Stack<br /> <span class="font-normal"><em>Non-disclosed client</em></span> <br /> <span class="text-sm font-normal">2013 em diante</span>',
+        description: `Contribuí ativamente em dezenas de projetos ao longo de mais de 11 anos, participando tanto na evolução e manutenção de sistemas existentes, quanto no planejamento e 
+                      execução de novos projetos, desde a concepção até a entrega em produção.<br/>
+                      Principais realizações: Criação de APIs de dados para clientes, implementação de robôs de captura automatizada de dados públicos para otimização de processos e redução de custos operacionais, 
+                      criação de microsserviços para modularidade dos sistemas. Elaboração de ferramentas de ETL e relatórios em Power BI, facilitando a tomada de decisões estratégicas das equipes de negócios.
+                      para apoiar as equipes de negócio na tomada de decisões.`,
         icon: 'tabler:briefcase',
       },
       {
-        title:
-          'Junior Graphic Designer <br /> <span class="font-normal">XYZ Creative Agency, Los Angeles, CA</span> <br /> <span class="text-sm font-normal">2018 - 2021</span>',
-        description: `Assisted senior designers in creating design concepts and visual assets. <br /> Contributed to the development of brand identities and marketing collateral. <br /> Collaborated with the marketing team to ensure consistent design across campaigns. <br /> Gained hands-on experience in various design software and tools.`,
+        title: 'Gerente de Projetos / Dev <br /> <span class="font-normal">Dice Informática</span> <br /> <span class="text-sm font-normal">2006 em diante</span>',
+        description: `Desenvolvimento de soluções personalizadas utilizando linguagem C# e tecnologias .NET, abrangendo tanto sistemas desktop quanto web.        
+                      Atuação direta no atendimento a clientes, incluindo a definição de escopo, orçamentação e acompanhamento de todas as fases do projeto.
+                      Tradução da necessidade do cliente em requisitos que após a análise são transformados em soluções tecnológicas.
+                      Responsável pelo suporte técnico e evolutivo pós-implementação, assegurando a continuidade e a qualidade dos serviços prestados.`,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title: 'Desenvolvedor Full Stack <br /> <span class="font-normal">CWI Software</span> <br /> <span class="text-sm font-normal">08/2011 - 04/2013</span>',
+        description: `Desenvolvimento de sistemas web para clientes de grande porte como Odebrecht, Terra, Finaud e Fleury. <strong>Atuação como líder técnico</strong> no projeto Finaud.<br/>
+                      Destaques: ASP.NET, .NET Framework, Entity Framework, DDD, TDD`,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title: 'Líder Técnico <br /> <span class="font-normal">PUCRS-Siemens Global Studio Project</span> <br /> <span class="text-sm font-normal">09/2005 - 09/2006</span>',
+        description: `Atuação em <strong>projeto internacional</strong> no formato de bolsa de iniciação científica da PUCRS em parceria com a Siemens. Participei como desenvolvedor Web Full Stack, e líder
+                      da equipe local de programação, apoiando também na arquitetura do software, e no controle de qualidade. Facilitador local nas reuniões (em inglês) com a equipe central do projeto 
+                      situada na cidade de Princeton, Nova Jersey (EUA).`,
         icon: 'tabler:briefcase',
       },
     ]}
@@ -135,15 +116,22 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    id="resume"
-    title="Education"
+    id="formacao"
+    title="Formação Acadêmica"
     items={[
       {
-        title: `Master of Fine Arts in Graphic Design <br /> <span class="font-normal">New York University's School of Design</span> <br /> <span class="text-sm font-normal">2018 - 2020</span>`,
+        title: `Ciência de Dados e Inteligência Artificial<br /> <span class="font-normal">Especialização com duração de três semestres (364 horas)</span><br />
+        <span class="text-sm font-normal">Trabalho de Conclusão: Sistema Bulário: Análise e visualização de dados de consultas de indicações de uso em bulas de agrotóxicos.<br /> 2022 - 2023</span>`,
         icon: 'tabler:school',
       },
       {
-        title: `Bachelor of Arts in Graphic Design <br /> <span class="font-normal">New York University's School of Design</span> <br /> <span class="text-sm font-normal">2014 - 2018</span>`,
+        title: `Gerenciamento de Projetos com ênfase em TI<br /> <span class="font-normal">Especialização com duração de três semestres (375 horas)</span><br />
+        <span class="text-sm font-normal">Trabalho de Conclusão: Scrum Mini: Uma aplicação do Scrum para pequenas empresas.<br /> 2008 - 2009</span>`,
+        icon: 'tabler:school',
+      },
+      {
+        title: `Bacharel em Ciência da Computação pela PUCRS<br /> <span class="font-normal">Curso superior com duração de nove semestres (3.240 horas)</span><br />
+        <span class="text-sm font-normal">Trabalho de Conclusão: Mavis – Um framework para visualização de Sistemas Multiagentes.<br /> 2002 - 2006</span>`,
         icon: 'tabler:school',
       },
     ]}
@@ -152,7 +140,7 @@ const metadata = {
 
   <!-- Features3 Widget ************** -->
 
-  <Features3
+  <!-- <Features3
     title="Skills"
     subtitle="Discover the proficiencies that allow me to bring imagination to life through design."
     columns={3}
@@ -195,11 +183,10 @@ const metadata = {
         description: 'Quick to adapt to new design trends, technologies, and client preferences.',
       },
     ]}
-  />
+  /> -->
 
   <!-- Content Widget **************** -->
-
-  <Content
+  <!-- <Content
     id="porfolio"
     title="Elevating visual narratives"
     subtitle="Embark on a design journey that surpasses pixels, entering a realm of imagination. Explore my portfolio, where passion and creativity converge to shape enthralling visual narratives."
@@ -236,11 +223,11 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content>
+  </Content> -->
 
   <!-- Content Widget **************** -->
 
-  <Content
+  <!-- <Content
     isReversed
     isAfterContent={true}
     items={[
@@ -274,11 +261,11 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content>
+  </Content> -->
 
   <!-- Content Widget **************** -->
 
-  <Content
+  <!-- <Content
     isReversed
     isAfterContent={true}
     items={[
@@ -311,11 +298,11 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content>
+  </Content> -->
 
   <!-- Testimonials Widget *********** -->
 
-  <Testimonials
+  <!-- <Testimonials
     title="Client testimonials"
     subtitle="Discover what clients have to say about their experiences working with me."
     testimonials={[
@@ -374,29 +361,19 @@ const metadata = {
         },
       },
     ]}
-  />
+  /> -->
 
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
-    title="Let's create together"
-    subtitle="Ready to transform your vision into captivating designs?"
+    title="Eu posso te ajudar"
+    subtitle="Vamos tirar o seu projeto do papel?"
     actions={[{
       variant:"primary",
-      text: 'Hire me',
-      href: '/',
+      text: 'Entre em contato',
+      href: 'https://www.linkedin.com/in/gldmelo/',
+      target: '_blank'
     }]}
   />
 
-  <!-- BlogLatestPost Widget **************** -->
-
-  <BlogLatestPosts
-    id="blog"
-    title="Explore my insightful articles on my blog"
-    information={`Dive into a realm of design wisdom and creative inspiration, where you'll find invaluable insights, practical tips, and captivating narratives that elevate and enrich your creative journey.`}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </BlogLatestPosts>
 </Layout>
