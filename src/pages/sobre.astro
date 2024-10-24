@@ -2,10 +2,10 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import Header from '~/components/widgets/Header.astro';
-import Hero from '~/components/widgets/Hero.astro';
+//import Hero from '~/components/widgets/Hero.astro';
 import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import Features3 from '~/components/widgets/Features3.astro';
+//import Features3 from '~/components/widgets/Features3.astro';
 //import Testimonials from '~/components/widgets/Testimonials.astro';
 import Steps from '~/components/widgets/Steps.astro';
 //import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
@@ -22,7 +22,7 @@ const metadata = {
   <Fragment slot="header">
     <Header
       links={[
-        { text: 'Home', href: '#' },
+        { text: 'Home', href: '/' },
         { text: 'Sobre mim', href: '#mim' },
         { text: 'Experiência', href: '#experiencia' },
         { text: 'Formação', href: '#formacao' }
@@ -84,8 +84,7 @@ const metadata = {
         description: `Contribuí ativamente em dezenas de projetos ao longo de mais de 11 anos, participando tanto na evolução e manutenção de sistemas existentes, quanto no planejamento e 
                       execução de novos projetos, desde a concepção até a entrega em produção.<br/>
                       Principais realizações: Criação de APIs de dados para clientes, implementação de robôs de captura automatizada de dados públicos para otimização de processos e redução de custos operacionais, 
-                      criação de microsserviços para modularidade dos sistemas. Elaboração de ferramentas de ETL e relatórios em Power BI, facilitando a tomada de decisões estratégicas das equipes de negócios.
-                      para apoiar as equipes de negócio na tomada de decisões.`,
+                      criação de microsserviços para modularidade dos sistemas. Elaboração de ferramentas de ETL e relatórios em Power BI, facilitando a tomada de decisões estratégicas das equipes de negócios.`,
         icon: 'tabler:briefcase',
       },
       {
