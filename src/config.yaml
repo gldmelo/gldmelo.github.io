@@ -10,7 +10,7 @@ site:
 metadata:
   title:
     default: AstroWind
-    template: '%s — AstroWind'
+    template: '%s — gldmelo.com.br'
   description: "Full Stack Developer. Programação e consultoria em projetos de software."
   robots:
     index: true
@@ -23,8 +23,8 @@ metadata:
         height: 628
     type: website
   twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
+    handle: 'gldmelo'
+    site: '@gldmelo'
     cardType: summary_large_image
 
 i18n:

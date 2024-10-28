@@ -91,29 +91,15 @@ export const headerData = {
     //   ],
     // },
     {
-      text: 'Blog',
-      links: [
-        {
-          text: 'Blog List',
-          href: getBlogPermalink(),
-        },
-        {
-          text: 'Article',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
-        },
-        {
-          text: 'Article (with MDX)',
-          href: getPermalink('markdown-elements-demo-post', 'post'),
-        },
-        {
-          text: 'Category Page',
-          href: getPermalink('tutorials', 'category'),
-        },
-        {
-          text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
-        },
-      ],
+      text: 'Artigos',
+      href: getBlogPermalink()
+      // links: [
+      //   {
+      //     text: 'Todos',
+      //     href: getBlogPermalink(),
+      //   },
+        
+      // ],
     },
   ],
   actions: [{ text: 'Meu GitHub', href: 'https://github.com/gldmelo', target: '_blank' }],
@@ -122,10 +108,10 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      title: 'Contato',
+      title: 'Links',
       links: [
-        { text: 'Posts', href: '/blog' },
-        { text: 'Fale conosco', href: '/contato' },
+        { text: 'Artigos', href: '/blog' },
+        { text: 'Fale conosco', href: 'https://www.linkedin.com/in/gldmelo/' },
         // { text: 'Security', href: '#' },
         // { text: 'Team', href: '#' },
         // { text: 'Enterprise', href: '#' },
