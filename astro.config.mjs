@@ -27,6 +27,7 @@ const whenExternalScripts = (items = []) =>
 export default defineConfig({
   output: 'static',
   site: 'https://www.gldmelo.com.br',
+  trailingSlash: "never",
 
   integrations: [
     tailwind({
